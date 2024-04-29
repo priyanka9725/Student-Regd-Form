@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Student Registration Form</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>STUDENT REGISTRATION SYSTEM</h1>
+        <p>Register and manage student details easily.</p>
+      </div>
+    </header>
+    <section>
+      <div class="form-container">
+        <form id="student-register"
+        >
+          <div class="input-label">
+            <label for="StudentName">STUDENT NAME: </label>
+            <input type="text" id="StudentName" required/>
+          </div>
+          <div class="input-label">
+            <label for="StudentDOB">DATE OF BIRTH: </label>
+            <input type="date" id="StudentDOB" required/>
+          </div>
+          <div class="input-label">
+            <label for="StudentId">STUDENT ID: </label>
+            <input type="number" id="StudentId" required/>
+            <label for="StudentClass">CLASS</label>
+            <input type="number" required/>
+          </div>
+          <div class="input-label">
+            <label for="StudentEmail">EMAIL ID: </label>
+            <input type="email" id="StudentEmail" required />
+          </div>
+          <div class="input-label">
+            <label for="StudentContact">CONTACT NO.: </label>
+            <input type="tel" required />
+          </div>
+        </form>
+        <button type="submit">REGISTER</button>
+      </div>
+    </section>
+    <section>
+      <div id="Student_Details">
+        <h2>Registered Student Details</h2>
+        <ul id="records"></ul>
+      </div>
+      <script src="./index.js"></script>
+    </section>
+  </body>
+</html>
