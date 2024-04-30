@@ -1,63 +1,87 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-image: url(./Images/bg.png);
-    background-size: cover;
-
+body {
+  background-image: url(./Images/bg.png);
+  background-size: cover;
 }
 
-section{
-    background-color: rgba(175, 215, 231, 0.247);
-    margin: 15px;
-    padding: 10px;
-    border: 0.5px solid white;
-    border-radius: 1rem;
+section {
+  background-color: rgba(175, 215, 231, 0.247);
+  margin: 20px;
+  padding: 10px;
+  border: 0.5px solid white;
+  border-radius: 1rem;
 }
 
-header{
-    background-color: transparent;
-    color: rgb(2, 29, 105);
-    padding: 10px 20px;
-    text-align: center;
+header {
+  background-color: transparent;
+  color: rgb(2, 29, 105);
+  padding: 10px 20px;
+  text-align: center;
+  margin-top: 30px;
 }
 
-.form-container{
-    display: flex;
-    flex-direction: column;
+h2 {
+  color: rgb(2, 29, 105);
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    margin: 30px 15px;
-    justify-content: center;
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 15px;
+  justify-content: center;
 }
 
-.input-label{
-    margin: 10px 0;
+.input-label {
+  margin: 10px 0;
 }
 
 input[type="text"],
 input[type="number"],
 input[type="email"],
-input[type="tel"], input[type="date"]{
-    min-width: 70%;
-    padding: 8px;
-    margin: 5px 0 15px;
-    border: 1px solid #ccc;
-    outline: none;
+input[type="tel"],
+input[type="date"] {
+  min-width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+label {
+  font-weight: 600;
+  color: rgb(3, 14, 80);
 }
 
 button {
-    background-color: #4CAF50;
-    margin:  20px ;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #4c6faf;
+  margin: 20px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: rgb(6, 147, 241);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lists {
+  background-color: rgba(59, 73, 75, 0.295);
+  margin: 10px 0;
+  padding: 10px;
+  border: 0.2px solid rgb(0, 153, 255);
+  color: white;
+  font-weight: 600;
 }
