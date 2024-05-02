@@ -1,87 +1,112 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-image: url(./Images/bg.png);
   background-size: cover;
-}
-
-section {
-  background-color: rgba(175, 215, 231, 0.247);
-  margin: 20px;
-  padding: 10px;
-  border: 0.5px solid white;
-  border-radius: 1rem;
+  background-repeat: no-repeat;
 }
 
 header {
-  background-color: transparent;
-  color: rgb(2, 29, 105);
-  padding: 10px 20px;
+  color: rgb(13, 22, 109);
   text-align: center;
-  margin-top: 30px;
+  margin: 10px;
+  padding: 30px;
+  font-size: 1.35rem;
+  background-color: rgba(100, 97, 93, 0.205);
+  border: 1px solid aqua;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem aqua;
 }
 
-h2 {
-  color: rgb(2, 29, 105);
+header p {
+  font-weight: 600;
+  margin: 20px 0;
+  font-size: 1.25rem;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  margin: 30px 15px;
-  justify-content: center;
+  background-color: rgba(105, 114, 114, 0.24);
+  padding: 30px;
+  margin: 10px;
+  border: 1px solid aqua;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem aqua;
 }
 
-.input-label {
+input {
+  width: calc(100% - 22px);
+  padding: 10px;
   margin: 10px 0;
+  outline: none;
+  border: none;
 }
 
-input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="tel"],
-input[type="date"] {
-  min-width: 100%;
-  padding: 8px;
-  margin: 5px 0 15px;
-  border: 1px solid #ccc;
+input:focus{
+  background: rgba(193, 217, 228, 0.534);
+  border: 1px solid aqua;
+}
+
+input:valid{
+  color: rgb(11, 0, 107);
+  font-weight: 600;
+
+}
+
+form button {
+  width: calc(100% - 22px);
+  margin: 20px 0;
+  padding: 5px;
+  background-color: rgb(101, 149, 204);
   outline: none;
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
+  border: 1px solid white;
+}
+
+form button:hover {
+  background-color: rgb(68, 116, 179);
+  transform: scale(1.01);
 }
 
 label {
   font-weight: 600;
-  color: rgb(3, 14, 80);
+  color: rgb(13, 22, 109);
 }
 
-button {
-  background-color: #4c6faf;
-  margin: 20px;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+#studentList {
+  margin: 10px;
+  padding: 30px;
+  background-color: rgba(105, 114, 114, 0.24);
+  color: rgb(13, 22, 109);
+  border: 1px solid aqua;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem aqua;
+}
+
+.student-entry {
+  background-color: rgba(240, 248, 255, 0.103);
+  padding: 10px 0 10px 10px;
+  margin: 20px 0;
+  color: rgb(8, 4, 255);
   font-weight: 600;
 }
 
-button:hover {
-  background-color: rgb(6, 147, 241);
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.lists {
-  background-color: rgba(59, 73, 75, 0.295);
-  margin: 10px 0;
-  padding: 10px;
-  border: 0.2px solid rgb(0, 153, 255);
-  color: white;
+.student-entry button {
+  margin-left: 10px;
+  padding: 5px;
   font-weight: 600;
+  border: 1px solid aqua;
+  background-color: rgb(148, 205, 238);
+}
+
+.student-entry button:hover{
+  background-color: rgb(125, 165, 197);
+  transform: scale(1.1);
 }
