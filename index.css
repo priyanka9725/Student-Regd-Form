@@ -16,7 +16,7 @@ header {
   margin: 10px;
   padding: 30px;
   font-size: 1.35rem;
-  background-color: rgba(100, 97, 93, 0.205);
+  background-color: rgba(100, 97, 93, 0.089);
   border: 1px solid aqua;
   border-radius: 1rem;
   box-shadow: 0 0 0.5rem aqua;
@@ -31,7 +31,7 @@ header p {
 form {
   display: flex;
   flex-direction: column;
-  background-color: rgba(105, 114, 114, 0.24);
+  background-color: rgba(105, 114, 114, 0.034);
   padding: 30px;
   margin: 10px;
   border: 1px solid aqua;
@@ -83,7 +83,7 @@ label {
 #studentList {
   margin: 10px;
   padding: 30px;
-  background-color: rgba(105, 114, 114, 0.24);
+  background-color: rgba(105, 114, 114, 0.116);
   color: rgb(13, 22, 109);
   border: 1px solid aqua;
   border-radius: 1rem;
@@ -100,9 +100,10 @@ label {
 
 .student-entry button {
   margin-left: 10px;
-  padding: 5px;
+  padding: 5px 10px;
   font-weight: 600;
   border: 1px solid aqua;
+  border-radius: 1rem;
   background-color: rgb(148, 205, 238);
 }
 
