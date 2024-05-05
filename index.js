@@ -1,11 +1,13 @@
 document
   .getElementById("studentForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
     const studentName = document.getElementById("studentName").value.trim();
     const studentID = document.getElementById("studentID").value.trim();
     const emailID = document.getElementById("emailID").value.trim();
     const contactNo = document.getElementById("contactNo").value.trim();
+
+// for confirming empty fields are not allowed
 
     if (studentName && studentID && emailID && contactNo) {
       const student = {
@@ -36,14 +38,14 @@ function displayStudents() {
     studentDiv.classList.add("student-entry");
     studentDiv.innerHTML = `
             Name: ${student.name}, ID: ${student.id}, Email: ${student.email}, Contact: ${student.contact}
-            <button onclick="editStudent('${student.id}')">Edit</button>
-            <button onclick="deleteStudent('${student.id}')">Delete</button>
+            <button onclick="editStudent('${student.id}')"><i class="fa-solid fa-pen" style="color: #023c69; "></i> Edit</button>
+            <button onclick="deleteStudent('${student.id}')"><i class="fa-solid fa-trash" style="color: #023c69;"></i> Delete</button>
         `;
     listContainer.appendChild(studentDiv);
   });
 }
 
-//  for editing students record taking the unique id as reference
+// function for editing students record taking the unique id as reference
 
 function editStudent(studentID) {
   const students = JSON.parse(localStorage.getItem("students")) || [];
@@ -55,6 +57,9 @@ function editStudent(studentID) {
     document.getElementById("contactNo").value = studentToEdit.contact;
   }
 }
+
+// function for deleting students record
+
 
 function deleteStudent(studentID) {
   let students = JSON.parse(localStorage.getItem("students")) || [];
