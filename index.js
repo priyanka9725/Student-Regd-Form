@@ -1,7 +1,7 @@
 document
   .getElementById("studentForm")
   .addEventListener("submit", function (e) {
-    e.preventDefault();
+    e.preventDefault(); // to stop rendering the form automatically again and again
     const studentName = document.getElementById("studentName").value.trim();
     const studentID = document.getElementById("studentID").value.trim();
     const emailID = document.getElementById("emailID").value.trim();
