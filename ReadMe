@@ -2,14 +2,22 @@ The JS part includes:
 
 various strings and array methods for structuring the working of the registration system.
 
+.trim- used to trim the empty spaces in both the ends when a person enter his/her details
 
 
+<!-- please refer to index.js -->
 
+.parse- used to convert the string into JS object. so the student details taken as input are converted into object form. for iterating over it to find if the student already exists then it throws an error.
 
+.stringify - used to covert object into string again. if the student does not exists then the student details are added.
 
+<!-- for editing an existing student record -->
 
+for editing an existing student record in the registration details the unique ID is taken as reference. The student details of a particular studentID can be edited but the student ID itself will not be edited instead a new student record with the unique id will be created.
 
+<!-- for deleting a student record -->
 
+for deleting a student record in the registration details simply the unique ID is removed corresponding to this student record is also removed from the registration details.
 
 
 /* GitHub Link : https://github.com/priyanka9725/Student-Regd-Form */
