@@ -87,6 +87,7 @@ label {
   border: 1px solid rgb(2, 70, 70);
   border-radius: 1rem;
   box-shadow: 0 0 1rem rgb(2, 70, 70);
+  height: 250px;
   overflow-y: auto;
 }
 
